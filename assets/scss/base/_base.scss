@@ -1,0 +1,27 @@
+// 盒模型
+*,*::before,*::after{
+  box-sizing: border-box;
+}
+
+/* 圖片樣式調整 */
+img {
+  max-width: 100%;
+  height: auto;
+	vertical-align: middle;
+}
+ul {
+  list-style: none;
+}
+
+// 其他全域設定 body [字體、行高、基礎字形大小]
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: $font-size-base;
+  line-height: 1.5;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}

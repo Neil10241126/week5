@@ -1,0 +1,20 @@
+// admin 
+.admin {
+  &-header {
+    margin-bottom: 44px;
+  }
+  a {
+    @include hover-transition {
+      color: map-get($color-type, success) !important;
+    }
+  }
+  table {
+    margin-bottom: 63px;
+  }
+  nav a {
+    @include hover-transition {
+      background: map-get($color-type, success);
+      color: #FFF !important;
+    }
+  }
+}

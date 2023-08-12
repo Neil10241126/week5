@@ -1,0 +1,45 @@
+// assignment
+.assignment {
+  &-header {
+    margin-bottom: 44px;
+    h2 {
+      margin-right: 50px;
+    }
+  }
+  &-link {
+    li:nth-child(2) {
+      margin-left: 26px;
+    }
+  }
+  a {
+    @include hover-transition {
+      color: map-get($color-type, success) !important;
+    }
+  }
+  .list-group {
+    margin-top: 6px;
+    .list-group-item {
+      padding: 12px;
+      &:hover, &:active {
+        background: map-get($color-type, light) !important;
+      }
+    }
+  }
+  .card-header {
+    padding: 12px 27px 12px 16px;
+  }
+  .card-body {
+    padding-bottom: 22px;
+    &-item img {
+      min-width: 40px;
+      height: 40px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  }
+}
+.modal-img {
+  object-fit: cover;
+  min-height: 141px;
+  width: 141px;
+}

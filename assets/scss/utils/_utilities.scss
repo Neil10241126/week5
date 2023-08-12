@@ -1,0 +1,53 @@
+// .container {
+//   max-width: 1296px;
+//   margin: 0 auto;
+//   padding-left: 12px;
+//   padding-right: 12px;
+//   @include pad {
+//     padding-left: 36px;
+//     padding-right: 36px;
+//   }
+//   @include moblie {
+//     padding-left: 13px;
+//     padding-right: 13px;
+//   }
+// }
+
+// .d {
+//   &-flex {display: flex;}
+//   &-block {display: block;}
+//   &-inline-bolck {display: inline-block;}
+//   &-none {display: none;}
+// }
+
+// .justify-content {
+//   &-start {justify-content: flex-start;}
+//   &-center {justify-content: center;}
+//   &-end {justify-content: flex-end;}
+//   &-between {justify-content: space-between;}
+// }
+
+// .align-items {
+//   &-start {align-items: flex-start;}
+//   &-center {align-items: center;}
+//   &-end {align-items: flex-end;}
+// }
+
+// .flex {
+//   &-row { flex-direction: row;}
+//   &-row-reverse {flex-direction: row-reverse;}
+//   &-column {flex-direction: column;}
+//   &-column-reverse {flex-direction: column-reverse;}
+
+//   &-nowrap {flex-wrap: nowrap;}
+//   &-wrap {flex-wrap: wrap;}
+//   &-wrap-reverse {flex-wrap: wrap-reverse;}
+// }
+
+// .text {
+//   &-start {text-align: left;}
+//   &-center {text-align: center;}
+//   &-end {text-align: right;}
+// }
+
+// 自訂 utilities

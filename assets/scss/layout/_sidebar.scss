@@ -1,0 +1,26 @@
+// side 
+.side {
+  &-logo {
+    background-image: url(../images/logo-ANSWER.svg);
+    background-size: contain;
+    width: 151px;
+    height: 40px;
+    @include hide-text
+  }
+  .nav-item {
+    margin-bottom: 27px;
+  }
+  .nav-link {
+    border-left: 4px solid transparent;
+    &:hover {
+      color: map-get($color-type, success) !important;
+      border-left: 4px solid map-get($color-type, success);
+    }
+  }
+  img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+}

@@ -1,0 +1,182 @@
+// 1. 字體變數 : default 16px
+$font-size-base: 1rem !default;
+// $font-size-type: (
+//   1: $font-size-base * 4,     // 64px
+//   2: $font-size-base * 3,     // 48px
+//   3: $font-size-base * 2.25,  // 36px
+//   4: $font-size-base * 1.5,   // 24px
+//   5: $font-size-base * 1.25,  // 20px
+//   6: $font-size-base,         // 16px
+//   7: $font-size-base * 0.875, // 14px
+// );
+
+// @each $name, $size in $font-size-type {
+//   .fs-#{$name} {
+//     font-size: $size;
+//   }
+// }
+
+// $font-weight-type: (
+//   regular: 400,
+//   medium: 500,
+//   bold: 700,
+//   bolder: 900,
+// );
+
+// @each $name, $weight in $font-weight-type {
+//   .fw-#{$name} {
+//     font-weight: $weight;
+//   }
+// }
+
+// 2. 推擠變數 : default 16px
+// $spacer-base: 1rem !default;
+// $spacer-type: (
+//   1: $spacer-base * 0.5, // 8px
+//   2: $spacer-base,       // 16px
+//   3: $spacer-base * 1.5, // 24px
+//   4: $spacer-base * 2,   // 32px
+//   5: $spacer-base * 3,   // 48px
+//   6: $spacer-base * 5,   // 80px
+// );
+
+// @each $name, $size in $spacer-type {
+//     // margin
+//     .mt-#{$name} {
+//       margin-top: $size;
+//     }
+//     .mb-#{$name} {
+//       margin-bottom: $size;
+//     }
+//     .ms-#{$name} {
+//       margin-left: $size;
+//     }
+//     .me-#{$name} {
+//       margin-right: $size;
+//     }
+//     .mx-#{$name} {
+//       margin-left: $size;
+//       margin-right: $size;
+//     }
+//     .my-#{$name} {
+//       margin-top: $size;
+//       margin-bottom: $size;
+//     }
+//     // padding
+//     .pt-#{$name} {
+//       padding-top: $size;
+//     }
+//     .pb-#{$name} {
+//       padding-bottom: $size;
+//     }
+//     .ps-#{$name} {
+//       padding-left: $size;
+//     }
+//     .pe-#{$name} {
+//       padding-right: $size;
+//     }
+//     .px-#{$name} {
+//       padding-left: $size;
+//       padding-right: $size;
+//     }
+//     .py-#{$name} {
+//       padding-top: $size;
+//       padding-bottom: $size;
+//     }
+// }
+
+// 3. 顏色變數 
+$color-type: (
+  // primary: #AA0601,
+  secondary: #6C757D,
+  success: #198754,
+  info: #CED4DA,
+  light: #F8F9FA,
+  dark: #212529,
+);
+
+// @each $name, $color in $color-type {
+//   .bg-#{$name} {
+//     background: $color;
+//   }
+//   .text-#{$name} {
+//     color: $color;
+//   }
+// }
+
+// 4. icon 變數
+$icon-type: (
+  dashboard: '\e85c',
+  question: '\e8af',
+  assignment: '\e85d',
+  course: '\e04a',
+  admin: '\e7fb',
+  setting: '\e8b8',
+  // main
+  file: '\e85c',
+  star: '\e83a',
+  pen: '\e3c9',
+  search: '\e8b6',
+  bell: '\e7f7',
+  arrowDown: '\e5c5',
+  arrowDown2: '\e5db',
+  down: '\e5cf',
+  Bold: '\e238',
+  italic: '\e238',
+  list: '\e896',
+  numberList: '\e242',
+  image: '\e3f4',
+  link: '\e250',
+  code: '\e86f',
+  eye: '\e8f4',
+  checkCircle: '\e86c',
+  warn: '\e002',
+  vert: '\e5d4',
+  attach: '\e226',
+  add: '\e145',
+);
+// icon 基礎設定
+// icon 管理指南 : https://developers.google.com/fonts/docs/material_icons?hl=zh-tw
+.icon {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* 預設大小 24px */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+@each $icon-name, $code-point in $icon-type {
+  .icon-#{$icon-name} {
+    &::before {
+      content: $code-point;
+    }
+  }
+}
+// icon 尺寸變數
+$icon-size-type: (
+  1: 36px,
+  2: 24px,
+  3: 18px,
+  4: 12px,
+);
+
+@each $icon-name, $size in $icon-size-type {
+  .icon-#{$icon-name} {
+    font-size: $size;
+  }
+}
