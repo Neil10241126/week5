@@ -1,15 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
-@import '../../node_modules/bootstrap/scss/functions';
-@import '/assets/scss/vendors/variablesBootstrap';
-
 // 1. utils (工具)
 @import './utils/variable';
 @import './utils/mixin';
 @import './utils/utilities';
 
 // 2. vendors (外部套件)
-// @import './vendors/bootstrap';
+@import './vendors/bootstrap';
 
 // 3. base (基礎設定)
 @import './base/base';
@@ -21,6 +18,3 @@
 // 5. pagse (頁面)
 @import './pages/assignment.scss';
 @import './pages/admin.scss';
-
-
-@import '../../node_modules/bootstrap';
